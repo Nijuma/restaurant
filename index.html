@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <h3>Sal's Pizzeria</h3>
+      <h5>The best in Napoli</h5>
+    </header>
+    <main>
+      <div id="feed"></div>
+
+      <section id="order-container">
+        <h1>Your Order</h1>
+        <div id="order-items"></div>
+        <div class="total">
+          <h2>Total Price:</h2>
+          <h2 id="total-price"></h2>
+        </div>
+        <button id="btn-complete">Complete order</button>
+      </section>
+    </main>
+
+    <form action="" id="payment-form" class="form">
+      <h1>Enter Payment Info</h1>
+      <label for="name"></label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="enter name"
+        required
+      />
+
+      <label for="credit-card"></label>
+
+      <input
+        type="text"
+        name="credit-card"
+        id="credit-card"
+        placeholder="credit card"
+        required
+      />
+
+      <label for="cvv"></label>
+      <input type="text" name="cvv" id="cvv" placeholder="cvv" required />
+
+      <button type="submit" class="pay-btn" data-pay="pay">Pay</button>
+    </form>
+
+    <div class="rating hidden" id="hidden">
+      <i data-star="stars" class="rating__star far fa-star"></i>
+      <i data-star="stars" class="rating__star far fa-star"></i>
+      <i data-star="stars" class="rating__star far fa-star"></i>
+      <i data-star="stars" class="rating__star far fa-star"></i>
+      <i data-star="stars" class="rating__star far fa-star"></i>
+    </div>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,259 @@
+body {
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+main {
+  margin: 0 auto;
+  width: 800px;
+}
+header {
+  width: 600xpx;
+  height: 167px;
+  margin: 0 auto;
+  background-image: url(imgs/pizzipi_600x167.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 75px;
+}
+
+h3 {
+  margin: 0;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 1.3rem;
+  padding: 15px 25px;
+}
+
+h5 {
+  margin: 0;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 14px;
+  padding: 15px 25px;
+}
+
+.container {
+  display: flex;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.emoji {
+  display: flex;
+}
+
+span {
+  font-size: 4rem;
+  padding-right: 50px;
+  display: flex;
+  align-self: center;
+}
+
+.add {
+  margin-left: auto;
+  border-radius: 100%;
+  border: 1px solid grey;
+  width: 3.125rem;
+  aspect-ratio: 1 / 1;
+}
+
+.add:hover {
+  background: green;
+  color: white;
+  transition: ease 600ms;
+}
+
+.btn {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+#div1 {
+  padding: 45px;
+  display: flex;
+  height: 200px;
+  width: 600px;
+}
+
+.menu-items {
+  font-size: 1.3rem;
+}
+
+.order-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.375rem;
+}
+
+.order-list {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+#payment-form {
+  display: none;
+  position: fixed;
+
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pay-btn {
+  background-color: green;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#payment-form h1 {
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 2rem;
+}
+#payment-form label {
+  display: block;
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+}
+#payment-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  background-color: rgb(221, 221, 221);
+}
+
+.completeOrder {
+  color: #000;
+  margin-left: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.rating {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.rating__star {
+  color: gold;
+}
+.rating__star:hover {
+  color: gold;
+  cursor: pointer;
+  opacity: 100%;
+}
+
+.rating__star:hover ~ .rating__star {
+  opacity: 50%;
+  color: black;
+}
+
+#order-container {
+  display: flex hidden;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 25px;
+  width: 80%;
+}
+
+#order-container h1 {
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#order-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.order-item-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-item-info p,
+.order-item-info h2 {
+  margin: 0;
+}
+
+.item-price {
+  margin-left: auto;
+}
+
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.total h2 {
+  margin: 0;
+}
+
+#btn-complete {
+  background-color: green;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+.order-item-info button {
+  background-color: red;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.order-item-info p {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
